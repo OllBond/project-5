@@ -29,3 +29,48 @@ button {
     text-decoration: none;
     color: inherit;
 }
+
+// в мене ще плюс таке 
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto',
+        sans-serif;
+    color: var(--primary-text-colorry);
+    background-color: var(--color-white);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
