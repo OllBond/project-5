@@ -57,28 +57,57 @@
     color: #D6936D;
     border-bottom: 1px solid #E1E1E1;
 }
-// .contacts-list__weekdays-work {
-// }
-// .contacts-list__weekdays-work-time {
-// }
-// .contacts-list__weekends-work {
-// }
-// .contacts-list__weekends-work-time {
-// }
-// .contacts-list__contact {
-// }
+.contacts-list__weekdays-work, .contacts-list__weekends-work {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    line-height: 1.86;
 
-// .contacts-button {
-// }
+}
+.contacts-list__weekdays-work-time {
+    margin-bottom: 8px;
+    color: #ABABAB;
+    font-size: 12px;
+    line-height: 1.86;
+}
+
+
+.contacts-list__weekends-work-time {
+    padding-bottom: 24px;
+    color: #ABABAB;
+    font-size: 12px;
+    line-height: 1.86;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+
+.contacts-list__contact {
+    display: block;
+    margin-top: 24px;
+    color: #D6936D;
+}
+
+.contacts-button {
+    display: flex;
+    
+}
 // .contacts-button__location {
+
 // }
 // .button-color {
 // }
-// .contacts-button__location-link {
-// }
+.contacts-button__location-link {
+    padding: 12px 15px;
+}
 // .contacts-button__franchise {
 // }
 // .button-transparent {
 // }
-// .contacts-button__franchise-link {
-// }
+.contacts-button__franchise-link {
+    padding: 13px 31px;
+}
+
+.contacts-button__franchise-link::after, .contacts-button__location-link::after {
+    background-image: url('./images/arrow.svg');
+    color: currentColor;
+}
