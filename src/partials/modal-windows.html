@@ -49,3 +49,50 @@
         </p>
     </div>
 </div>
+
+
+
+<!-- --Modal window Franchise-- -->
+
+<div class="backdrop is-hidden" data-modal-franchise="">
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-franchise-close="">
+            <svg class="modal-close-btn-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-close-modal"></use>
+
+            </svg>
+        </button>
+        <p class="modal-form-text">
+            Thank you for your interest in owning an Ice Cream shop
+        </p>
+        <p class="modal-franchise-descr">
+            Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once
+            the application process resumes, we will contact you for further information. Please fill out the contact information
+            below and we will reach out for additional information. We appreciate your patience.
+        </p>
+        <form class="modal-form">
+            <label class="modal-form-field">
+                <span class="modal-form-input-wrapper">
+                    <input type="text" name="user_name" class="modal-form-input" required="" pattern="[a-zA-Zа-яА-Я]+"
+                        minlength="2" placeholder="Name">
+                        
+                </span>
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-form-input-wrapper">
+                    <input type="tel" name="user_phone" class="modal-form-input" required=""
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" placeholder="Phone">
+                </span>
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-form-input-wrapper">
+                    <input type="email" name="user_email" class="modal-form-input" required="" placeholder="Email">     
+                </span>
+            </label>
+            <label class="modal-form-field modal-form-comment">       
+              <textarea name="user_message" class="modal-form-message" placeholder="Comment"></textarea>
+            </label>   
+            <button type="submit" class="modal-form-submit button-color">Submit</button>
+        </form>
+    </div>
+</div>
