@@ -2,6 +2,7 @@
 .galary-icecream__img {
     width: 100%;
     max-width: 480px;
+    min-height: 130px;
     margin: 0 auto;
     border-radius: 7.40681px;
 
@@ -33,7 +34,7 @@ screen and (min-resolution: 2dppx) and (max-width:767px) {
 @media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
 screen and (min-resolution: 192dpi) and (min-width:768px),
 screen and (min-resolution: 2dppx) and (min-width:768px) {
-    .customer-box {
+    .galary {
         background-image: url(../images/products/ice-bcg_tab@2x.jpg);
     }
 }
@@ -42,7 +43,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
 
 @media screen and (min-width:1200px) {
-    .customer-box {
+    .galary {
         background-image: url(../images/products/ice-bcg_desc.jpg);
     }
 }
@@ -50,7 +51,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
 screen and (min-resolution: 192dpi) and (min-width:1200px),
 screen and (min-resolution: 2dppx) and (min-width:1200px) {
-    .customer-box {
+    .galary {
         background-image: url(../images/products/ice-bcg_desc@2x.jpg);
     }
 }

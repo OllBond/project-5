@@ -18,3 +18,16 @@ $('.single-item').slick({
     autoplaySpeed: 3000,
     arrows: false,
 });
+
+$('.one-time').slick({
+  dots: true,
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false
+
+});
+		
