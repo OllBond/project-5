@@ -20,7 +20,8 @@
   "dependencies": {
     "jquery": "^3.6.1",
     "modern-normalize": "^1.1.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "slick-slider": "^1.8.2"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

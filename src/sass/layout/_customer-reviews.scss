@@ -1,0 +1,53 @@
+.customer-box {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../images/products/ice-bcg1_mob.jpg);
+       }
+           @media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
+           screen and (min-resolution: 192dpi) and (max-width:767px),
+           screen and (min-resolution: 2dppx) and (max-width:767px) {
+               .customer-box {
+                   background-image: url(../images/products/ice-bcg1_mob@2x.jpg);
+               }
+           }
+
+   .customer-box__img{
+    margin: 0 auto; 
+    border-radius: 50%;
+    margin-bottom: 30px;
+
+   }
+   .customer-box__comment{
+    background: #84A178;
+   border-radius: 10px;
+}
+@media screen and (min-width:768px) {
+                    .customer-box {
+                            background-image: url(../images/products/ice-bcg_tab.jpg);
+                        }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx) and (min-width:768px) {
+                .customer-box {
+                        background-image: url(../images/products/ice-bcg_tab@2x.jpg);
+                    }
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+                    .customer-box {
+                            background-image: url(../images/products/ice-bcg_desc.jpg);
+                        }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
+screen and (min-resolution: 192dpi) and (min-width:1200px),
+screen and (min-resolution: 2dppx) and (min-width:1200px) {
+    .customer-box {
+        background-image: url(../images/products/ice-bcg_desc@2x.jpg);
+    }
+}
+   
