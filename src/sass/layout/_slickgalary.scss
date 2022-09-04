@@ -1,13 +1,14 @@
 @import "../../../node_modules/slick-carousel/slick/slick.scss";
-.slick-list{
+.slick-list {
     overflow: hidden;
     padding-bottom: 80px;
-
 }
+
 .slick-track{
     display: flex;
    margin: 0 auto;
 }
+
 .galary-icecream__list .slick-arrow{
 position: absolute;
 top: 50%;
@@ -16,29 +17,29 @@ font-size: 0;
 width: 60px;
 height: 60px;
 background-size: cover;
-    background-position: center;
-    border:none;
-
+background-position: center;
+border:none;
 }
+
 .galary-icecream__list .slick-prev.slick-arrow{
 left: 20%;
 background: url(/src/images/forward.svg) no-repeat;
 background-size: cover;
-    background-position: center;
+background-position: center;
 }
+
 .galary-icecream__list .slick-next.slick-arrow{
 right: 20%;
 background: url(/src/images/reply.svg) no-repeat;
 background-size: cover;
-    background-position: center;
+background-position: center;
 }
 
-
 .galary-icecream__list .slick-dots{
-    display: flex;
+display: flex;
 justify-content: center;
-    & li:not(:last-child) {
-            margin-right: 10px;
+& li:not(:last-child) {
+margin-right: 10px;
         }
 }
 
