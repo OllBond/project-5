@@ -1,7 +1,7 @@
 @media screen and (min-width:200px) {
 .galary-icecream__img {
     width: 100%;
-    max-width: 480px;
+    max-width: 420px;
     margin: 0 auto;
     border-radius: 7.40681px;
     
@@ -35,7 +35,7 @@ screen and (min-resolution: 2dppx) and (max-width:767px) {
 
 @media screen and (min-width:768px) {
     .galary-icecream__img {
-        width: 704px;
+        max-width: 704px;
     }
 }
 

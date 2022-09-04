@@ -21,7 +21,7 @@
    border-radius: 10px;
    margin: 0 auto;
    margin-bottom: 30px;
-   max-width: 480px;
+   max-width: 420px;
    padding: 34px 39px;
 
 font-family: 'Montserrat';
@@ -56,6 +56,9 @@ font-family: 'Montserrat';
                     .customer-box {
                             background-image: url(../images/products/ice-bcg_tab.jpg);
                         }
+ .customer-box__comment {
+    max-width: 705px;
+ }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
 screen and (min-resolution: 192dpi) and (min-width:768px),
@@ -69,9 +72,12 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
 
 @media screen and (min-width:1200px) {
-                    .customer-box {
-                            background-image: url(../images/products/ice-bcg_desc.jpg);
+    .customer-box {
+     background-image: url(../images/products/ice-bcg_desc.jpg);
                         }
+ .customer-box__comment {
+     max-width: 968px;
+ }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
