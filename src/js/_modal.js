@@ -10,6 +10,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("active-modal");
   }
 })();
 
@@ -27,6 +28,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+      document.body.classList.toggle("active-modal");
   }
 })();
 
@@ -44,5 +46,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("active-modal");
   }
 })();
