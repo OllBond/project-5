@@ -2,9 +2,18 @@
 .galary-icecream__img {
     width: 100%;
     max-width: 480px;
-    min-height: 130px;
     margin: 0 auto;
     border-radius: 7.40681px;
+    
+}
+.galary-icecream{
+    position: relative;
+    padding-bottom: 50px;
+}
+.galary-icecream__list{
+    position: absolute;
+    left: 0;
+    right: 0;
 
 }
 .galary{

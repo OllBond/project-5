@@ -10,10 +10,17 @@
     display: flex;
     margin: 0 auto;
 }
+.galary-icecream__list{
+    position: relative;
+    & .slick-list{
+        position: relative;
+    top: -25px;
+    }
+}
 
 .galary-icecream__list .slick-arrow {
     position: absolute;
-    top: 50%;
+    top:75%;
     z-index: 10;
     font-size: 0;
     width: 60px;
@@ -25,14 +32,14 @@
 }
 
 .galary-icecream__list .slick-prev.slick-arrow {
-    left: 20%;
+    left: 0;
     background: url(/src/images/galary&customers/forward.svg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .galary-icecream__list .slick-next.slick-arrow {
-    right: 20%;
+    right: 0;
     background: url(/src/images/galary&customers/reply.svg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -46,19 +53,19 @@
     & li:not(:last-child) {
         margin-right: 10px;
     }
+        & button {
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border-radius: 60%;
+            border-color: aqua;
+            background-color: violet;
+        }
+                & .slick-active button {
+                    background-color: black;
+                    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
 }
 
-.galary-icecream__list .slick-dots button {
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    border-radius: 60%;
-    border-color: aqua;
-    background-color: violet;
-}
 
-.galary-icecream__list .slick-dots .slick-active button {
-    background-color: black;
-    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
