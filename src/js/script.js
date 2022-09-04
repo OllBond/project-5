@@ -14,7 +14,7 @@ import "slick-slider";
 $('.single-item').slick({
      dots: true,
     speed: 1000,
-    autoplay: tru,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows:false,
 });

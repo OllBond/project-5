@@ -1,8 +1,47 @@
-.customer-box {
+@media screen and (min-width:200px){
+    .customer-box {
     width: 100%;
     margin: 0 auto;
+    padding-right:30px;
+    padding-left:30px;
     background-image: url(../images/products/ice-bcg1_mob.jpg);
-       }
+       }  
+        .customer-box__img{
+    margin: 0 auto; 
+    border-radius: 50%;
+    margin-bottom: 30px;
+    width:85px;
+    height:85px;
+
+
+   }
+   .customer-box__comment{
+    background: #84A178;
+   border-radius: 10px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+   max-width: 280px;
+
+font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 255%;
+       text-align: center;
+    color:var(--title-text-color-secondary)
+}
+.customer-box__name{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 186%;
+        text-align: center;
+        color: var(--button-text-black);
+}
+
+}
+
            @media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
            screen and (min-resolution: 192dpi) and (max-width:767px),
            screen and (min-resolution: 2dppx) and (max-width:767px) {
@@ -11,16 +50,6 @@
                }
            }
 
-   .customer-box__img{
-    margin: 0 auto; 
-    border-radius: 50%;
-    margin-bottom: 30px;
-
-   }
-   .customer-box__comment{
-    background: #84A178;
-   border-radius: 10px;
-}
 @media screen and (min-width:768px) {
                     .customer-box {
                             background-image: url(../images/products/ice-bcg_tab.jpg);
