@@ -1,0 +1,286 @@
+@media screen and (max-width: 767px) {
+  .header-btn-modal {
+    display: none;
+  }
+
+  .hero-text {
+    display: none;
+  }
+
+  .hero-progress {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+.header-container {
+  padding-top: 12px;
+  // outline: solid 1px red;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 61px;
+}
+
+.header-logo__icon {
+  width: 40px;
+  height: 37px;
+  fill: var(--button-color);
+}
+
+.header-btn-burger__icon-burger {
+  width: 20px;
+  height: 12px;
+  fill: #ffffff;
+}
+
+.header-btn-burger {
+  border: none;
+  background-color: inherit;
+  width: 38px;
+  height: 38px;
+
+  margin-left: auto;
+}
+
+.hero-title {
+  display: block;
+  width: 247px;
+
+  @include font(26px, 400, 1.23);
+  font-family: 'Seymour One';
+  text-transform: uppercase;
+  color: var(--button-text-white);
+  text-align: left;
+
+  margin-bottom: 32px;
+}
+
+.hero-title_upper {
+  @include font(34px, 400, 0.97);
+}
+
+.hero-menu__item {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+
+  border: 2px solid var(--button-color);
+  border-radius: 10px;
+
+  @include font(8px, 600, 1.25);
+
+  transition: border-color var(--transition-func);
+
+  &:focus,
+  &:hover {
+    border-color: var(--button-color-accent);
+  }
+}
+
+.hero-menu {
+  display: block;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.hero-menu__list:not(:last-child) {
+  margin-right: 8px;
+}
+
+.hero {
+  height: 392px;
+  background-image: url('../images/hero/drops/mobile/group.png'),
+    url(../images/hero/ice-cream/mobile/ice-cream-mobile.png);
+  // background-size: cover;
+  background-position: bottom, bottom;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo__icon {
+    width: 48px;
+    height: 44px;
+  }
+
+  .header-btn-burger {
+    margin-right: 31px;
+  }
+
+  .header-btn-modal {
+    padding: 12px 34px;
+    @include font(14px, 600, 1.21);
+
+    border-radius: 10px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--button-text-black);
+    transition: background-color var(--transition-func);
+
+    &:hover,
+    &:focus {
+      background-color: var(--button-color-accent);
+    }
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .hero {
+    position: relative;
+  }
+
+  .hero-progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .hero-progress__amount {
+    @include font(28px, 900, 1.21);
+    margin-bottom: 4px;
+  }
+
+  .hero-progress__products {
+    @include font(8px, 400, 1.25);
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    width: 183px;
+    @include font(18px, 400, 1.28);
+    margin-bottom: 21px;
+  }
+
+  .hero-title_upper {
+    @include font(24px, 400, 0.54);
+  }
+
+  .hero-progress__list {
+    text-align: right;
+  }
+
+  .hero-desc {
+    width: 151px;
+    margin-bottom: 32px;
+
+    @include font(12px, 400, 1.42);
+    color: #ffffff;
+  }
+
+  .hero-desc__icon {
+    width: 40px;
+    height: 16px;
+    fill: #ffffff;
+  }
+
+  .hero {
+    height: 542px;
+    // background-image: url(
+    //   '../images/hero/many-ice-cream/many-ice-cream.jpg',
+    //   '../images/hero/ice-cream/tablet/ice-cream-tablet.png'
+    // );
+    // background-size: contain;
+    // background-position: right 0 buttom 25px, right 65px bottom 0px;
+    // background-repeat: no-repeat;
+  }
+
+  .hero-text {
+    position: absolute;
+    left: 150px;
+    bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo__icon {
+    width: 60px;
+    height: 65px;
+    margin-right: 268px;
+  }
+
+  .header-nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+  }
+
+  .header-nav__item {
+    @include font(16px, 700, 1.25);
+    color: var(--button-text-white);
+    transition: color var(--transition-func);
+
+    &:hover,
+    &:focus {
+      color: var(--button-color);
+    }
+  }
+
+  .header-btn-burger {
+    display: none;
+  }
+
+  .header-btn-modal {
+    margin-left: auto;
+  }
+
+  .header {
+    margin-bottom: 45px;
+  }
+
+  .hero-title {
+    width: 367px;
+    @include font(38px, 400, 1.26);
+    margin-bottom: 28px;
+  }
+
+  .hero-title_upper {
+    @include font(38px, 400, 1.26);
+  }
+
+  .hero-menu__item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 34px;
+    padding-right: 34px;
+
+    @include font(14px, 600, 1.29);
+  }
+
+  .hero-menu__list:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .hero-progress__amount {
+    @include font(46px, 900, 1.22);
+    color: var(--primary-text-color);
+    margin-bottom: 4px;
+  }
+
+  .hero-progress__products {
+    @include font(14px, 400, 1.21);
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+
+  .hero-desc {
+    width: 200px;
+    margin-bottom: 32px;
+
+    @include font(14px, 400, 1.43);
+  }
+}

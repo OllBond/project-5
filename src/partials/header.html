@@ -1,10 +1,10 @@
-<header class="container">
+<header class="container header-container">
   <div class="header" id="home">
-    <!-- <a class="link header-logo" href="#">
+    <a class="link header-logo" href="#">
       <svg class="header-logo__icon">
-        <use href=""></use>
+        <use href="./images/sprite1.svg#logo-icon"></use>
       </svg>
-    </a> -->
+    </a>
     <nav class="header-nav">
       <ul class="header-nav__menu">
         <li class="list header-nav__list">
@@ -24,16 +24,20 @@
         </li>
       </ul>
     </nav>
-    <!-- <button type="button" class="button header-btn-burger">
+    <button type="button" class="header-btn-burger">
       <svg class="header-btn-burger__icon-burger">
-        <use href=""></use>
+        <use href="./images/sprite1.svg#burger-icon"></use>
       </svg>
-    </button> -->
-    <button type="button" class="button header-btn-modal">Buy now</button>
+    </button>
+    <button type="button" class="button header-btn-modal">
+      <span class="header-btn-modal__name">Buy now</span>
+    </button>
   </div>
 
   <section class="hero">
-    <h1 class="hero-title">ice cream made with passion</h1>
+    <h1 class="hero-title">
+      ice cream made with <span class="hero-title_upper">passion</span>
+    </h1>
 
     <ul class="hero-menu">
       <li class="list hero-menu__list">
@@ -44,15 +48,17 @@
       </li>
     </ul>
 
-    <p class="hero-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et
-    </p>
-    <!-- <a class="link hero-desc__link" href="#">
-      <svg class="hero-desc__icon">
-        <use href=""></use>
-      </svg>
-    </a> -->
+    <div class="hero-text">
+      <p class="hero-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <a class="link hero-desc__link" href="#">
+        <svg class="hero-desc__icon">
+          <use href="./images/sprite1.svg#arrow-icon"></use>
+        </svg>
+      </a>
+    </div>
 
     <ul class="hero-progress">
       <li class="list hero-progress__list">

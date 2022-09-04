@@ -1,9 +1,9 @@
 body {
-    background-color: var(--background-color);
-    color: var(--primary-text-color);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.04em;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
 }
 
 h1,
@@ -12,28 +12,41 @@ h3,
 h4,
 h5,
 h6,
-p, 
-ul{
-    margin: 0;
+p,
+ul {
+  margin: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    /* height: auto; */
+  display: block;
+  max-width: 100%;
+  /* height: auto; */
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .list {
-    list-style: none;
-    padding-left: 0px;
-    margin: 0px;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
 }
 
 .link {
+
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    }
+
+a {
     text-decoration: none;
-    color: inherit;
 }
