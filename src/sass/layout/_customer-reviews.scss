@@ -53,6 +53,12 @@ font-family: 'Montserrat';
            }
 
 @media screen and (min-width:768px) {
+    .customer-box__name {
+        font-size: 16px;
+    }
+    .customer-box__comment {
+        font-size: 14px;
+    }
                     .customer-box {
                             background-image: url(../images/products/ice-bcg_tab.jpg);
                         }
@@ -72,6 +78,9 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 
 
 @media screen and (min-width:1200px) {
+        .customer-box__comment {
+                font-size: 16px;
+            }
     .customer-box {
      background-image: url(../images/products/ice-bcg_desc.jpg);
                         }
