@@ -6,6 +6,9 @@
         padding-left: 45px;
         padding-right: 45px;
     }
+    .advantages-list {
+        text-align: center;
+    }
     .advantages-list__icon {
         margin-bottom: 16px;
     }
@@ -36,6 +39,9 @@
         padding-bottom: 40px;
         padding-left: 76px;
         padding-right: 76px;
+    }
+    .advantages-list {
+        display: flex;
     }
     .advantages-list__icon {
         margin-bottom: 32px;
