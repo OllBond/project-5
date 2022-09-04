@@ -1,0 +1,29 @@
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+.slick-list{
+    overflow: hidden;
+
+}
+.slick-track{
+    display: flex;
+   margin: 0 auto;
+}
+.galary-icecream__list .slick-arrow{
+position: absolute;
+top: 25%;
+z-index: 10;
+font-size: 0;
+width: 30px;
+height: 50px;
+
+}
+.galary-icecream__list .slick-prev.slick-arrow{
+left: 0;
+background-image: url(../images/reply.svg) 0 0 / 100 no-repeat;
+z-index: 11;
+fill: red($color: #000000);
+}
+.galary-icecream__list .slick-next.slick-arrow{
+right: 0;
+background-image: url(../) 0 0 / 100 no-repeat;
+z-index: 11;
+}
