@@ -1,16 +1,14 @@
-.galary-icecream__img {
+.galary-icecream__img{
     width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
+    max-width:320px;
+    margin: 0 auto; 
     border-radius: 7.40681px;
 }
-
-.galary-icecream {
+.galary-icecream{
     padding: 0 auto;
 }
-
-@media screen and (min-width:768px) {
-    .galary-icecream__img {
+@media screen and (min-width:768px){
+.galary-icecream__img {
         width: 704px;
-    }
+}
 }

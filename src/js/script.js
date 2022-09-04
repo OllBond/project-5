@@ -6,5 +6,5 @@ $(".carousel").slick({
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 2500,
-    
 });
+

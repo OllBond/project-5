@@ -20,7 +20,7 @@ ul{
 img {
     display: block;
     max-width: 100%;
-    /* height: auto; */
+    height: auto;
 }
 
 button {
@@ -44,5 +44,8 @@ ol {
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
+    }
 
+a {
+    text-decoration: none;
 }
