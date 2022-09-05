@@ -120,7 +120,7 @@
 
 .hero {
   position: relative;
-  height: 392px;
+  height: 380px;
   max-width: 480px;
   background-image: url('../images/hero/drops/mobile/drops.png');
   background-size: contain;
@@ -129,10 +129,11 @@
 }
 
 .hero-big-ice-cream {
-  width: 170px;
+  width: 400px;
   position: absolute;
-  bottom: -33px;
-  left: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-34%, -25%);
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -186,7 +187,7 @@
 
   .hero {
     position: relative;
-    height: 343px;
+    height: 320px;
     max-width: 1199px;
     background-image: url('../images/hero/drops/tablet/drops.png');
     background-size: contain;
@@ -195,10 +196,11 @@
   }
 
   .hero-big-ice-cream {
-    width: 290px;
+    width: 400px;
     position: absolute;
-    bottom: -44px;
-    right: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -52%);
   }
 
   .hero-progress {
@@ -247,12 +249,12 @@
   }
 
   .hero-many-ice-cream {
-    width: 152px;
-    height: 152px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    background-color: red;
 
     position: absolute;
+    overflow: hidden;
     bottom: 13px;
     left: 32px;
   }
@@ -357,7 +359,8 @@
   }
 
   .hero {
-    height: 593px;
+    position: relative;
+    height: 540px;
     max-width: 1400px;
     background-image: url('../images/hero/drops/desktop/drops.png');
     background-size: contain;
@@ -366,10 +369,22 @@
   }
 
   .hero-big-ice-cream {
-    width: 484px;
+    width: 600px;
     position: absolute;
-    bottom: -74px;
-    right: 67px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -49%);
+  }
+
+  .hero-many-ice-cream {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+
+    position: absolute;
+    overflow: hidden;
+    bottom: 70px;
+    left: 0;
   }
 }
 
