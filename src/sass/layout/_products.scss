@@ -16,13 +16,9 @@
 .products-overlay {
         margin-left: auto;
         margin-right: auto;
+               
         
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // background-size: cover;
-        
-        
-            background-image: url(../images/products/ice-bcg1_mob.jpg), url(../images/products/ice-bcg2_mob.jpg), url(../images/products/ice-bcg3_mob.jpg);
+        background-image: url(../images/products/ice-bcg1_mob.jpg), url(../images/products/ice-bcg2_mob.jpg), url(../images/products/ice-bcg3_mob.jpg);
         
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -47,8 +43,6 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 1200px) {
     .prducts-overlay {
-        // width: 1600px;
-        // height: 600px;
         background-image: url(../images/products/ice-bcg_desc.jpg);
     }
 
@@ -113,27 +107,33 @@ screen and(min-resolution: 2dppx) {
     @media screen and (min-width: 1200px) {
             font-size: 36px;
             line-height: 1.25;
+            margin-bottom: 220px;
     
         }
     
 }
 
 .product__titel {
+    text-align: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
 
+    padding-top: 150px;
     padding-bottom: 40px;
+
 
     @media screen and (min-width: 768px) {
             font-size: 22px;
             line-height: 1.22;
+            padding-top: 130px;
     
         }
     
     @media screen and (min-width: 1200px) {
         font-size: 30px;
         line-height: 1.23;
+        padding-top: 200px;
     
     }
 }
@@ -146,6 +146,7 @@ screen and(min-resolution: 2dppx) {
     font-size: 14px;
     line-height: 176%;    
     letter-spacing: 0.04em;
+    padding-bottom: 90px;
     
     color: var(--primary-text-color);
 
@@ -182,10 +183,15 @@ screen and(min-resolution: 2dppx) {
 
 
 
+
 .product__item {
+    position: relative;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
 
     border: 1px;
@@ -196,6 +202,8 @@ screen and(min-resolution: 2dppx) {
 
     @media screen and (min-width: 768px) {
         width: 370px;
+        padding-left: 26px;
+        padding-right: 26px;
         
        }
 
@@ -216,36 +224,61 @@ screen and(min-resolution: 2dppx) {
 }
 .product__img {
     border-radius: 50%;
-    position: relative;
-    bottom: 100px;
-    z-index: 1000;
 
-    @media screen and (min-width: 768px) {
-        bottom: 60px;
-    }
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
     
+    
+}
+
+.bcg-img {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    
+
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+
+
+    @media screen and (min-width: 1200px) {
+        width: 300px;
+        height: 300px;
+    
+    }
+
+}
+.ellipse-green {
+        background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+        
 
 }
 
-.product__bcg-img {
-    border-radius: 50%;
-    position: relative;
-    bottom: 300px;
-    
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+.ellipse-yellow {
+    background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
 
-    @media screen and (min-width: 768px) {
-        bottom: 170px;
-    }
-
-
-
+.ellipse-red {
+    background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
 .button-info {
     background-color: transparent;
-        border: none;
-        padding: 0;
-        line-height: 0;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    padding-bottom: 20px;
+
 }
+
+
+
