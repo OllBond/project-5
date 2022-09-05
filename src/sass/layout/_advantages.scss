@@ -4,12 +4,17 @@
         padding-top: 42px;
         padding-bottom: 36px;
     }
-    .advantages-list {
-        text-align: center;
-    }
-    .advantages-list__icon {
+    
+    .advantages-list__icons-wrapper {
+        // width: 100%;
         margin-bottom: 16px;
     }
+    .advantages-list__text-wraper {
+        margin-top: 16px;
+    }
+    // .advantages-list__icon {
+    //     margin-bottom: 16px;
+    // }
     .advantages-list__title {
         margin-bottom: 18px;
 
@@ -40,23 +45,33 @@
         display: flex;
         gap: 80px;
     }
-    .advantages-list__icon {
-        margin-bottom: 32px;
+    .advantages-list__text-wraper {
+        margin-top: 32px;
     }
+    // .advantages-list__icons-wrapper {
+    //     margin-bottom: 32px;
+    // }
+
+    // .advantages-list__icon {
+    //     margin-bottom: 32px;
+    // }
     .advantages-list__title {
+
+        margin-bottom: 16px;
+
         font-weight: 700;
         font-size: 48px;
         line-height: 1.22;
         text-align: center;
         text-transform: uppercase;
-        color: var(--text-color);
+        color: var(--title-text-color-secondary);
     }
     .advantages-list__text {
         font-weight: 400;
         font-size: 14px;
         line-height: 174%;
         text-align: center;
-        color: var(--text-color);
+        color: var(--title-text-color-secondary);
     }
 }
 
@@ -69,10 +84,17 @@
         display: flex;
         gap:32px;
     }
-    .advantages-list__icon {
-        margin-bottom: 40px;
+    .advantages-list__text-wraper {
+        margin-top: 40px;
     }
+    // .advantages-list__icons-wrapper {
+    //     margin-bottom: 40px;
+    // }
+    // .advantages-list__icon {
+    //     margin-bottom: 40px;
+    // }
     .advantages-list__title {
+        margin-bottom: 16px;
         font-weight: 700;
         font-size: 58px;
         line-height: 1.22;
@@ -93,4 +115,40 @@
 .advantages-list__icon {
     width: 36px;
     height: 36px;
+    fill: var(--primary-text-color);
 }
+
+.advantages-list__icons-wrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    width: 50px;
+    height: 50px;
+    background-color: var(--button-color);
+    border-radius: 50%;
+}
+
+
+// .advantages-list__icons-wrapper::before {
+//     content: '';
+//     display: block;
+//     width: 50px;
+//     height: 50px;
+//     background-color: var(--button-color);
+//     background-position: center; 
+//     margin-left: auto;
+//     margin-right: auto;
+//     border-radius: 50%;
+    
+// }
+
+
+// .advantages-list__icon::before {
+//     content: '';
+//     display: block;
+//     background-image: url("../images/sprite.svg#icon-cow");
+//     background-position: center; 
+// }

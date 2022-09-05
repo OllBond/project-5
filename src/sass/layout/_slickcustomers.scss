@@ -1,0 +1,37 @@
+@import "../../../node_modules/slick-slider/slick/slick.scss";
+
+.slick-list {
+    overflow: hidden;
+
+}
+
+.slick-track {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.customer-box__list .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    & li:not(:last-child) {
+        margin-right: 18px;
+    }
+       
+}
+
+.customer-box__list .slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border-radius: 44px;
+    background-color: var(--dots-color);
+}
+
+.customer-box__list .slick-dots .slick-active button {
+    background-color: var(--dots-color-active);
+    transition: var(--transition-dur-func);
+}
