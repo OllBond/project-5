@@ -1,22 +1,96 @@
-// .contacts {
-
-// }
 
 // .contacts-list {
+// margin-top: 32px;
 // }
 
+// Background
+
+.contacts {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 16px;
+
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 26%, var(--background-color) 26%, var(--background-color) 74%), url(../images/products/ice-bcg1_mob.jpg), url(../images/products/ice-bcg2_mob.jpg), url(../images/products/ice-bcg3_mob.jpg);
+}
+
+//             background-image: url(../images/products/ice-bcg1_mob.jpg), url(../images/products/ice-bcg2_mob.jpg), url(../images/products/ice-bcg3_mob.jpg);
+        
+//             @media screen and (min-device-pixel-ratio: 2),
+//             screen and (min-resolution: 192dpi),
+//             screen and (min-resolution: 2dppx) {
+//                 background-image: url(../images/products/ice-bcg1_mob@2x.jpg), url(../images/products/ice-bcg2_mob@2x.jpg), url(../images/products/ice-bcg3_mob@2x.jpg);
+//             }
+// }
+
+// @media screen and (min-width: 768px) {
+//     .products-overlay {
+//         background-image: url(../images/products/ice-bcg_tab.jpg);
+//     }
+// }
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+// screen and (min-resolution: 192dpi),
+// screen and (min-resolution: 2dppx) {
+//     .prducts-overlay {
+//         background-image: url(../images/products/ice-bcg_tab@2x.jpg);
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .prducts-overlay {
+//         // width: 1600px;
+//         // height: 600px;
+//         background-image: url(../images/products/ice-bcg_desc.jpg);
+//     }
+
+// }
+
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+// screen and(min-resolution: 192dpi),
+// screen and(min-resolution: 2dppx) {
+//     .prducts-overlay {
+//         background-image: url(../images/products/ice-bcg_desc@2x.jpg);
+//     }
+
+// }
+
+
+
 .contacts-list__item {
+    margin-top: 32px;
     padding: 32px 40px;
     background-color: #fff;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
     display: block;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    transition: box-shadow var(--transition-func);
 
     &:not(:last-child){
     margin-bottom: 20px;
     }
+
+    &:hover, &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
+
+// Effect: Drop shadow
+// Blend: Multiply
+// Radius: 30px
+// Offset: 0px, 8px
+// rgba(212, 20, 67, 0.1)
+// Effect: Drop shadow
+// Radius: 4px
+// Offset: 0px, 4px
+
+
+// Effect: Drop shadow
+// Radius: 4px
+// Offset: 0px, 4px
+// rgba(0, 0, 0, 0.25)
 
 .contacts-list__text {
     font-size: 12px;
@@ -79,44 +153,46 @@
     @extend .contacts-list__text;
     line-height: 1.5;
     display: block;
-    color: #D6936D;
+    color: var(--primary-text-color);
 }
 
 .contacts-button {
-    margin: 32px auto;
+    // position: absolute;
+    // top: 962px;
+    margin: 32px auto 38px;
+    // margin-bottom: 32px;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     gap: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.22;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.05;
 }
 
-.contacts-button__location-link {
-    display: block;
-    padding: 12px 15px;
+.contacts-button__location, .contacts-button__franchise {
+    display: inline-flex;
+    width: 196px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
 }
 
-.contacts-button__franchise-link {
-    display: block;
-    padding: 13px 31px;
-}
-
-.contacts-button__franchise-link::after, .contacts-button__location-link::after {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 11px;
-    background-image: url('../images/arrow.svg');
-    color: currentColor;
+.contacts-button__icon {
+    fill: currentColor;
 }
 
 // tablet
 
 @media screen and (min-width: 768px) {
+
+.contacts {
+        padding-top: 32px;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 52%, var(--background-color) 52%, var(--background-color) 48%), url(../images/products/ice-bcg_tab.jpg);
+}
+
     .contacts-list__item {
     padding: 40px 24px 40px 24px;
     // width: 368px;
@@ -130,6 +206,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
+        // top: -303px;
     }
 .contacts-list__subtitle {
     color: var(--primary-text-color);
@@ -148,8 +225,6 @@
     padding-bottom: 26px;
     margin-bottom: 32px;
     font-weight: 1.83;
-    // color: #D6936D;
-    // border-bottom: 1px solid #E1E1E1;
 }
 
 .contacts-list__weekdays-work, .contacts-list__weekends-work {
@@ -175,13 +250,11 @@
     line-height: 1.86;
 }
 .contacts-button {
+    // top: 284px;
     flex-direction: row;
     margin-top: 60px;
     margin-bottom: 40px;
     gap: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.29;
 }
 
 }
@@ -189,6 +262,11 @@
 // DESKTOP
 
 @media screen and (min-width: 1200px) {
+.contacts {
+        padding-top: 32px;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 24%, var(--background-color) 24%, var(--background-color) 76%), url(../images/products/ice-bcg_desc.jpg);
+}
+
     .contacts-list__item {
     padding: 40px;
     flex-basis: calc((100% - 64px) / 3);
@@ -201,6 +279,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
+        // top: -96px;
     }
 
 .contacts-list__subtitle {
@@ -220,8 +299,6 @@
     padding-bottom: 32px;
     margin-bottom: 32px;
     font-weight: 1.83;
-    // color: #D6936D;
-    // border-bottom: 1px solid #E1E1E1;
 }
 
 .contacts-list__weekdays-work, .contacts-list__weekends-work {
@@ -247,16 +324,10 @@
     line-height: 1.86;
 }
 .contacts-button {
+    // top: 506px;
     margin-top: 64px;
     margin-bottom: 120px;
     gap: 18px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.29;
 }
 
-.contacts-button__location-link, .contacts-button__franchise-link {
-    display: block;
-    padding: 12px 36px;
-}
 }
