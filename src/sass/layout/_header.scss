@@ -10,6 +10,10 @@
   .hero-progress {
     display: none;
   }
+
+  .hero-many-ice-cream {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -20,13 +24,11 @@
 
 .header-container {
   padding-top: 12px;
-  // outline: solid 1px red;
 }
 
 .header {
   display: flex;
   align-items: center;
-
   margin-bottom: 61px;
 }
 
@@ -68,7 +70,12 @@
   @include font(34px, 400, 0.97);
 }
 
-.hero-menu__item {
+.hero-menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.hero-menu__item_pr {
   display: block;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -88,24 +95,52 @@
   }
 }
 
+.hero-menu__item_md {
+  padding-top: 9px;
+  @include font(8px, 600, 1.25);
+  color: var(--button-color);
+  text-decoration: underline;
+  transition: color var(--transition-func);
+
+  &:focus,
+  &:hover {
+    color: var(--button-color-accent);
+  }
+}
+
 .hero-menu {
   display: block;
   display: flex;
   align-items: flex-start;
-  padding-left: 0;
 }
 
 .hero-menu__list:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 18px;
 }
 
 .hero {
+  position: relative;
   height: 392px;
-  background-image: url('../images/hero/drops/mobile/group.png'),
-    url(../images/hero/ice-cream/mobile/ice-cream-mobile.png);
-  // background-size: cover;
-  background-position: bottom, bottom;
+  max-width: 480px;
+  background-image: url('../images/hero/drops/mobile/drops.png');
+  background-size: contain;
+  background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.hero-big-ice-cream {
+  width: 170px;
+  position: absolute;
+  bottom: -33px;
+  left: 60px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url('../images/hero/drops/mobile/drops@2x.png');
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -119,7 +154,12 @@
   }
 
   .header-btn-modal {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
     padding: 12px 34px;
+
     @include font(14px, 600, 1.21);
 
     border-radius: 10px;
@@ -134,12 +174,31 @@
     }
   }
 
+  .header-btn-modal__icon {
+    width: 12px;
+    height: 12px;
+    fill: inherit;
+  }
+
   .header {
     margin-bottom: 40px;
   }
 
   .hero {
     position: relative;
+    height: 343px;
+    max-width: 1199px;
+    background-image: url('../images/hero/drops/tablet/drops.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .hero-big-ice-cream {
+    width: 290px;
+    position: absolute;
+    bottom: -44px;
+    right: 80px;
   }
 
   .hero-progress {
@@ -187,21 +246,29 @@
     fill: #ffffff;
   }
 
-  .hero {
-    height: 542px;
-    // background-image: url(
-    //   '../images/hero/many-ice-cream/many-ice-cream.jpg',
-    //   '../images/hero/ice-cream/tablet/ice-cream-tablet.png'
-    // );
-    // background-size: contain;
-    // background-position: right 0 buttom 25px, right 65px bottom 0px;
-    // background-repeat: no-repeat;
+  .hero-many-ice-cream {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    background-color: red;
+
+    position: absolute;
+    bottom: 13px;
+    left: 32px;
   }
 
   .hero-text {
     position: absolute;
-    left: 150px;
-    bottom: 50px;
+    left: 185px;
+    bottom: 33px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/hero/drops/tablet/drops@2x.png');
   }
 }
 
@@ -252,7 +319,7 @@
     @include font(38px, 400, 1.26);
   }
 
-  .hero-menu__item {
+  .hero-menu__item_pr {
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 34px;
@@ -261,8 +328,13 @@
     @include font(14px, 600, 1.29);
   }
 
+  .hero-menu__item_md {
+    padding-top: 14px;
+    @include font(14px, 600, 1.29);
+  }
+
   .hero-menu__list:not(:last-child) {
-    margin-right: 12px;
+    margin-right: 34px;
   }
 
   .hero-progress__amount {
@@ -282,5 +354,29 @@
     margin-bottom: 32px;
 
     @include font(14px, 400, 1.43);
+  }
+
+  .hero {
+    height: 593px;
+    max-width: 1400px;
+    background-image: url('../images/hero/drops/desktop/drops.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .hero-big-ice-cream {
+    width: 484px;
+    position: absolute;
+    bottom: -74px;
+    right: 67px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url('../images/hero/drops/desktop/drops@2x.png');
   }
 }
