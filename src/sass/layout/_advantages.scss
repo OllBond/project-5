@@ -93,4 +93,25 @@
 .advantages-list__icon {
     width: 36px;
     height: 36px;
+    fill: var(--primary-text-color);
 }
+
+.advantages-list__icons-wrapper {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+
+    width: 50px;
+    height: 50px;
+    background-color: var(--button-color);
+    border-radius: 50%;
+}
+
+
+// .advantages-list__icon::before {
+//     content: "";
+//     width: 50px;
+//     height: 50px;
+//     background-color: var(--button-color);
+//     border-radius: 50%;
+// }
