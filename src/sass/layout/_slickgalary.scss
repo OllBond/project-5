@@ -1,15 +1,12 @@
 @import "../../../node_modules/slick-carousel/slick/slick.scss";
-
-@media screen and (min-width:200px){
 .slick-list {
     overflow: hidden;
     padding-bottom: 80px;
-
 }
 
-.slick-track {
+.slick-track{
     display: flex;
-    margin: 0 auto;
+   margin: 0 auto;
 }
 .galary-icecream__list{
     position: relative;
@@ -18,7 +15,6 @@
     top: -25px;
     }
 }
-
 .galary-icecream__list .slick-arrow {
     position: absolute;
     top:80%;
@@ -75,7 +71,6 @@
     }
         .galary-icecream__list .slick-list{
             top: -164px;
-
         }
  .galary-icecream__list .slick-prev.slick-arrow {
      left: 20%;
@@ -100,3 +95,8 @@ right: 20%;
 }
  }
 
+
+.galary-icecream__list .slick-dots .slick-active button{
+    background-color: black;
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}

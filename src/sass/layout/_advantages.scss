@@ -3,8 +3,11 @@
     .section-advantages {
         padding-top: 42px;
         padding-bottom: 36px;
-        padding-left: 45px;
-        padding-right: 45px;
+    }
+    
+    .advantages-list__icons-wrapper {
+        // width: 100%;
+        margin-bottom: 16px;
     }
     .advantages-list__icon {
         margin-bottom: 16px;
@@ -18,7 +21,7 @@
         line-height: 1.17;
         text-align: center;
         text-transform: uppercase;
-        color: #FCFCFC;      
+        color: var(--title-text-color-secondary);      
 }
         .advantages-list__text {
         margin-bottom: 28px;    
@@ -26,7 +29,7 @@
         font-size: 12px;
         line-height: 170%;
         text-align: center;
-        color: #FCFCFC;
+        color: var(--title-text-color-secondary);
         }
 }
 
@@ -34,9 +37,16 @@
     .section-advantages {
         padding-top: 53px;
         padding-bottom: 40px;
-        padding-left: 76px;
-        padding-right: 76px;
     }
+    .advantages-list {
+        display: flex;
+        gap: 80px;
+    }
+
+    .advantages-list__icons-wrapper {
+        margin-bottom: 32px;
+    }
+
     .advantages-list__icon {
         margin-bottom: 32px;
     }
@@ -46,14 +56,14 @@
         line-height: 1.22;
         text-align: center;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: var(--title-text-color-secondary);
     }
     .advantages-list__text {
         font-weight: 400;
         font-size: 14px;
         line-height: 174%;
         text-align: center;
-        color: #FFFFFF;
+        color: var(--title-text-color-secondary);
     }
 }
 
@@ -61,8 +71,13 @@
     .section-advantages {
         padding-top: 60px;
         padding-bottom: 86px;
-        padding-left: 16px;
-        padding-right: 16px;
+    }
+    .advantages-list {
+        display: flex;
+        gap:32px;
+    }
+    .advantages-list__icons-wrapper {
+        margin-bottom: 40px;
     }
     .advantages-list__icon {
         margin-bottom: 40px;
@@ -73,7 +88,7 @@
         line-height: 1.22;
         text-align: center;
         text-transform: uppercase;
-        color: #FCFCFC;
+        color: var(--title-text-color-secondary);
     }
     .advantages-list__text {
         font-weight: 400;
@@ -81,11 +96,35 @@
         line-height: 176%;
         text-align: center;
         letter-spacing: 0.02em;
-        color: #FCFCFC;
+        color: var(--title-text-color-secondary);
     }
 }
 
 .advantages-list__icon {
     width: 36px;
     height: 36px;
+    fill: var(--primary-text-color);
 }
+
+.advantages-list__icons-wrapper {
+
+    display: flex;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    background-color: var(--button-color);
+    border-radius: 50%;
+}
+
+
+// .advantages-list__icons-wrapper::before {
+//     content: "";
+//     width: 50px;
+//     height: 50px;
+//     background-color: var(--button-color);
+//     background-position: center; 
+//     margin-left: auto;
+//     margin-right: auto;
+//     border-radius: 50%;
+// }

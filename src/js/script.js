@@ -7,7 +7,6 @@ $(".carousel").slick({
     autoplay: true,
     adaptiveHeight: true,
     autoplaySpeed: 2500,
-    
 });
 
 import "slick-slider";
@@ -30,4 +29,4 @@ $('.one-time').slick({
     arrows: false
 
 });
-		
+

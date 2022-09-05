@@ -29,20 +29,25 @@
         <use href="./images/sprite1.svg#burger-icon"></use>
       </svg>
     </button>
-    <button type="button" class="button header-btn-modal">Buy now</button>
+    <button type="button" class="button header-btn-modal">
+      Buy now
+      <svg class="header-btn-modal__icon">
+        <use href="./images/sprite.svg#more-icon"></use>
+      </svg>
+    </button>
   </div>
 
   <section class="hero">
     <h1 class="hero-title">
-      ice cream made with <span class="hero-title_uppercase">passion</span>
+      ice cream made with <span class="hero-title_upper">passion</span>
     </h1>
 
     <ul class="hero-menu">
       <li class="list hero-menu__list">
-        <a class="link hero-menu__item" href="#products">Products</a>
+        <a class="link hero-menu__item_pr" href="#products">Products</a>
       </li>
       <li class="list hero-menu__list">
-        <a class="link hero-menu__item" href="#made">How it’s made?</a>
+        <a class="link hero-menu__item_md" href="#made">How it’s made?</a>
       </li>
     </ul>
 
@@ -72,5 +77,65 @@
         <p class="hero-progress__products">food trucks</p>
       </li>
     </ul>
+
+    <!-- <div class="hero-many-ice-cream">
+      <picture>
+        <source
+          srcset="
+            ./images/hero/many-ice-cream/desktop/many-ice-cream-desktop.jpg    1x,
+            ./images/hero/many-ice-cream/desktop/many-ice-cream-desktop@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="
+            ./images/hero/many-ice-cream/tablet/many-ice-cream-tablet.jpg    1x,
+            ./images/hero/many-ice-cream/tablet/many-ice-cream-tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <img
+          class=""
+          src="./images/hero/many-ice-cream/tablet/many-ice-cream-tablet.jpg"
+          alt="Фотография мороженого"
+        />
+      </picture>
+    </div> -->
+
+    <div class="hero-big-ice-cream">
+      <picture>
+        <source
+          srcset="
+            ./images/hero/ice/desktop/ice.png    1x,
+            ./images/hero/ice/desktop/ice@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="
+            ./images/hero/ice/tablet/ice.png    1x,
+            ./images/hero/ice/tablet/ice@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+            ./images/hero/ice/mobile/ice.png    1x,
+            ./images/hero/ice/mobile/ice@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+
+        <img
+          class=""
+          src="./images/hero/ice/mobile/ice.png"
+          alt="Фотография мороженого"
+        />
+      </picture>
+    </div>
   </section>
 </header>

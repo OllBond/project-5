@@ -1,3 +1,4 @@
+
 @media screen and (min-width:200px) {
 .galary-icecream__img {
     width: 100%;
@@ -20,8 +21,7 @@
     padding: 0 30;
         background-image: url(../images/products/ice-bcg1_mob.jpg);
 }
-
-.galary-icecream {
+.galary-icecream{
     padding: 0 auto;
 }
 }
@@ -47,9 +47,6 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
         background-image: url(../images/products/ice-bcg_tab@2x.jpg);
     }
 }
-
-
-
 
 @media screen and (min-width:1200px) {
     .galary {

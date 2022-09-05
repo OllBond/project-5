@@ -1,4 +1,4 @@
-<section class="products" id="products">
+<section class="products products-overlay" id="products">
     <div class="container">
         <p class="label">100% natural</p>
         <h2 class="titel">products</h2>
@@ -18,13 +18,27 @@
                     <img class="product__img" src="./images/product-1-mobile.jpg" alt="ice cream" />
                 </picture>
 
+                <picture>
+                    <source
+                        srcset="./images/products/ellipse-green_desc.jpg"
+                        media="(min-width: 1200px)" />
+                
+                    <source srcset="./images/products/ellipse-green_tab.jpg" 
+                    media="(min-width: 768px)" />
+                
+                    <source srcset="./images/products/ellipse-green_mob.jpg" 
+                    media="(min-width: 320px)" />
+                
+                    <img class="product__bcg-img" src="./images/products/ellipse-green_mob.jpg" alt="ellipse green" />
+                </picture>
+
                 <h3 class="product__titel">ice cream</h3>
                 <p class="text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
                     stabilizer
                 </p>
                 <button class="button-info" type="button">
-                    <svg class="info-icon" width="20" height="20">
-                        <use href="#"></use>
+                    <svg class="info-icon" width="40" height="20">
+                        <use href="./images/sprite1.svg#arrow-icon"></use>
                     </svg>
                 </button>
             </li>
@@ -43,14 +57,24 @@
                     <img class="product__img" src="./images/product-2-mobile.jpg" alt="ice coffee" />
                 </picture>
 
+                <picture>
+                    <source srcset="./images/products/ellipse-yellow_desc.jpg" media="(min-width: 1200px)" />
+                
+                    <source srcset="./images/products/ellipse-yellow_tab.jpg" media="(min-width: 768px)" />
+                
+                    <source srcset="./images/products/ellipse-yellow_mob.jpg" media="(min-width: 320px)" />
+                
+                    <img class="product__bcg-img" src="./images/products/ellipse-yellow_mob.jpg" alt="ellipse yellow" />
+                </picture>
+
                 <h3 class="product__titel">ice coffee</h3>
                 <p class="text">Fragrant invigorating drink created from 100% natural ingredients without the use of
                     preservatives
                     and flavor enhancers
                 </p>
                 <button class="button-info" type="button">
-                    <svg class="info-icon" width="20" height="20">
-                        <use href="#"></use>
+                    <svg class="info-icon" width="40" height="20">
+                        <use href="./images/sprite1.svg#arrow-icon"></use>
                     </svg>
                 </button>
             </li>
@@ -68,17 +92,27 @@
 
                     <img class="product__img" src="./images/product-3-mobile.jpg" alt="milkshakes" />
                 </picture>
+
+                <picture>
+                    <source srcset="./images/products/ellipse-red_desc.jpg" media="(min-width: 1200px)" />
+                
+                    <source srcset="./images/products/ellipse-red_tab.jpg" media="(min-width: 768px)" />
+                
+                    <source srcset="./images/products/ellipse-red_mob.jpg" media="(min-width: 320px)" />
+                
+                    <img class="product__bcg-img" src="./images/products/ellipse-red_mob.jpg" alt="ellipse red" />
+                </picture>
                 <h3 class="product__titel">milkshakes</h3>
                 <p class="text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and
                     other sweets
                     of your choice
                 </p>
                 <button class="button-info" type="button">
-                    <svg class="info-icon" width="20" height="20">
-                        <use href="#"></use>
+                    <svg class="info-icon" width="40" height="20">
+                        <use href="./images/sprite1.svg#arrow-icon"></use>
                     </svg>
                 </button>
             </li>
-        </ul>
+        </ul> 
     </div>
 </section>

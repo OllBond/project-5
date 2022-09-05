@@ -10,6 +10,10 @@
   .hero-progress {
     display: none;
   }
+
+  .hero-many-ice-cream {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -25,14 +29,13 @@
 .header {
   display: flex;
   align-items: center;
-
   margin-bottom: 61px;
 }
 
 .header-logo__icon {
   width: 40px;
   height: 37px;
-  fill: #f8d24e;
+  fill: var(--button-color);
 }
 
 .header-btn-burger__icon-burger {
@@ -51,28 +54,93 @@
 }
 
 .hero-title {
+  display: block;
+  width: 247px;
+
+  @include font(26px, 400, 1.23);
+  font-family: 'Seymour One';
+  text-transform: uppercase;
+  color: var(--button-text-white);
   text-align: left;
 
   margin-bottom: 32px;
 }
 
-.hero-menu {
-  display: flex;
-  align-items: flex-start;
-  padding-left: 0;
+.hero-title_upper {
+  @include font(34px, 400, 0.97);
 }
 
 .hero-menu__list {
-  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-menu__item_pr {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+
+  border: 2px solid var(--button-color);
+  border-radius: 10px;
+
+  @include font(8px, 600, 1.25);
+
+  transition: border-color var(--transition-func);
+
+  &:focus,
+  &:hover {
+    border-color: var(--button-color-accent);
+  }
+}
+
+.hero-menu__item_md {
+  padding-top: 9px;
+  @include font(8px, 600, 1.25);
+  color: var(--button-color);
+  text-decoration: underline;
+  transition: color var(--transition-func);
+
+  &:focus,
+  &:hover {
+    color: var(--button-color-accent);
+  }
+}
+
+.hero-menu {
+  display: block;
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-menu__list:not(:last-child) {
+  margin-right: 18px;
 }
 
 .hero {
+  position: relative;
   height: 392px;
-  background-image: url('../images/hero/drops/mobile/group.png'),
-    url(../images/hero/ice-cream/mobile/ice-cream-mobile.png);
-  // background-size: cover;
-  background-position: bottom, bottom;
+  max-width: 480px;
+  background-image: url('../images/hero/drops/mobile/drops.png');
+  background-size: contain;
+  background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.hero-big-ice-cream {
+  width: 170px;
+  position: absolute;
+  bottom: -33px;
+  left: 60px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url('../images/hero/drops/mobile/drops@2x.png');
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -85,12 +153,52 @@
     margin-right: 31px;
   }
 
+  .header-btn-modal {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 12px 34px;
+
+    @include font(14px, 600, 1.21);
+
+    border-radius: 10px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--button-text-black);
+    transition: background-color var(--transition-func);
+
+    &:hover,
+    &:focus {
+      background-color: var(--button-color-accent);
+    }
+  }
+
+  .header-btn-modal__icon {
+    width: 12px;
+    height: 12px;
+    fill: inherit;
+  }
+
   .header {
     margin-bottom: 40px;
   }
 
   .hero {
     position: relative;
+    height: 343px;
+    max-width: 1199px;
+    background-image: url('../images/hero/drops/tablet/drops.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .hero-big-ice-cream {
+    width: 290px;
+    position: absolute;
+    bottom: -44px;
+    right: 80px;
   }
 
   .hero-progress {
@@ -99,8 +207,25 @@
     right: 0;
   }
 
-  .hero-title {
+  .hero-progress__amount {
+    @include font(28px, 900, 1.21);
+    margin-bottom: 4px;
+  }
+
+  .hero-progress__products {
+    @include font(8px, 400, 1.25);
+    color: #ffffff;
     margin-bottom: 20px;
+  }
+
+  .hero-title {
+    width: 183px;
+    @include font(18px, 400, 1.28);
+    margin-bottom: 21px;
+  }
+
+  .hero-title_upper {
+    @include font(24px, 400, 0.54);
   }
 
   .hero-progress__list {
@@ -110,6 +235,9 @@
   .hero-desc {
     width: 151px;
     margin-bottom: 32px;
+
+    @include font(12px, 400, 1.42);
+    color: #ffffff;
   }
 
   .hero-desc__icon {
@@ -118,21 +246,29 @@
     fill: #ffffff;
   }
 
-  .hero {
-    height: 542px;
-    // background-image: url(
-    //   '../images/hero/many-ice-cream/many-ice-cream.jpg',
-    //   '../images/hero/ice-cream/tablet/ice-cream-tablet.png'
-    // );
-    // background-size: contain;
-    // background-position: right 0 buttom 25px, right 65px bottom 0px;
-    // background-repeat: no-repeat;
+  .hero-many-ice-cream {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    background-color: red;
+
+    position: absolute;
+    bottom: 13px;
+    left: 32px;
   }
 
   .hero-text {
     position: absolute;
-    left: 150px;
-    bottom: 50px;
+    left: 185px;
+    bottom: 33px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/hero/drops/tablet/drops@2x.png');
   }
 }
 
@@ -150,6 +286,17 @@
     gap: 27px;
   }
 
+  .header-nav__item {
+    @include font(16px, 700, 1.25);
+    color: var(--button-text-white);
+    transition: color var(--transition-func);
+
+    &:hover,
+    &:focus {
+      color: var(--button-color);
+    }
+  }
+
   .header-btn-burger {
     display: none;
   }
@@ -158,7 +305,78 @@
     margin-left: auto;
   }
 
+  .header {
+    margin-bottom: 45px;
+  }
+
   .hero-title {
+    width: 367px;
+    @include font(38px, 400, 1.26);
     margin-bottom: 28px;
+  }
+
+  .hero-title_upper {
+    @include font(38px, 400, 1.26);
+  }
+
+  .hero-menu__item_pr {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 34px;
+    padding-right: 34px;
+
+    @include font(14px, 600, 1.29);
+  }
+
+  .hero-menu__item_md {
+    padding-top: 14px;
+    @include font(14px, 600, 1.29);
+  }
+
+  .hero-menu__list:not(:last-child) {
+    margin-right: 34px;
+  }
+
+  .hero-progress__amount {
+    @include font(46px, 900, 1.22);
+    color: var(--primary-text-color);
+    margin-bottom: 4px;
+  }
+
+  .hero-progress__products {
+    @include font(14px, 400, 1.21);
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+
+  .hero-desc {
+    width: 200px;
+    margin-bottom: 32px;
+
+    @include font(14px, 400, 1.43);
+  }
+
+  .hero {
+    height: 593px;
+    max-width: 1400px;
+    background-image: url('../images/hero/drops/desktop/drops.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .hero-big-ice-cream {
+    width: 484px;
+    position: absolute;
+    bottom: -74px;
+    right: 67px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url('../images/hero/drops/desktop/drops@2x.png');
   }
 }
