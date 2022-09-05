@@ -45,6 +45,7 @@
 }
 
 .header-btn-burger {
+  outline: none;
   border: none;
   background-color: inherit;
   width: 38px;
@@ -60,7 +61,7 @@
   @include font(26px, 400, 1.23);
   font-family: 'Seymour One';
   text-transform: uppercase;
-  color: var(--button-text-white);
+  color: var(--title-text-color-secondary);
   text-align: left;
 
   margin-bottom: 32px;
@@ -82,6 +83,7 @@
   padding-left: 14px;
   padding-right: 14px;
 
+  outline: none;
   border: 2px solid var(--button-color);
   border-radius: 10px;
 
@@ -98,6 +100,7 @@
 .hero-menu__item_md {
   padding-top: 9px;
   @include font(8px, 600, 1.25);
+  outline: none;
   color: var(--button-color);
   text-decoration: underline;
   transition: color var(--transition-func);
@@ -158,6 +161,7 @@
     display: flex;
     align-items: center;
     gap: 7px;
+    outline: none;
 
     padding: 12px 34px;
 
@@ -216,7 +220,7 @@
 
   .hero-progress__products {
     @include font(8px, 400, 1.25);
-    color: #ffffff;
+    color: var(--title-text-color-secondary);
     margin-bottom: 20px;
   }
 
@@ -239,29 +243,30 @@
     margin-bottom: 32px;
 
     @include font(12px, 400, 1.42);
-    color: #ffffff;
+    color: var(--title-text-color-secondary);
+  }
+
+  .hero-desc__link {
+    outline: none;
   }
 
   .hero-desc__icon {
     width: 40px;
     height: 16px;
-    fill: #ffffff;
+    fill: var(--title-text-color-secondary);
   }
 
   .hero-many-ice-cream {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-
+    width: 152px;
+    height: 152px;
     position: absolute;
-    overflow: hidden;
-    bottom: 13px;
-    left: 32px;
+    bottom: 6%;
+    left: 0;
   }
 
   .hero-text {
     position: absolute;
-    left: 185px;
+    left: 25%;
     bottom: 33px;
   }
 }
@@ -292,6 +297,7 @@
     @include font(16px, 700, 1.25);
     color: var(--button-text-white);
     transition: color var(--transition-func);
+    outline: none;
 
     &:hover,
     &:focus {
@@ -321,6 +327,12 @@
     @include font(38px, 400, 1.26);
   }
 
+  .hero-text {
+    position: absolute;
+    left: 22%;
+    bottom: 13%;
+  }
+
   .hero-menu__item_pr {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -347,7 +359,6 @@
 
   .hero-progress__products {
     @include font(14px, 400, 1.21);
-    color: #ffffff;
     margin-bottom: 16px;
   }
 
@@ -377,13 +388,10 @@
   }
 
   .hero-many-ice-cream {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-
+    width: 225px;
+    height: 225px;
     position: absolute;
-    overflow: hidden;
-    bottom: 70px;
+    bottom: 13%;
     left: 0;
   }
 }
