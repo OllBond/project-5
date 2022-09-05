@@ -9,9 +9,12 @@
         // width: 100%;
         margin-bottom: 16px;
     }
-    .advantages-list__icon {
-        margin-bottom: 16px;
+    .advantages-list__text-wraper {
+        margin-top: 16px;
     }
+    // .advantages-list__icon {
+    //     margin-bottom: 16px;
+    // }
     .advantages-list__title {
         margin-bottom: 18px;
 
@@ -42,15 +45,20 @@
         display: flex;
         gap: 80px;
     }
-
-    .advantages-list__icons-wrapper {
-        margin-bottom: 32px;
+    .advantages-list__text-wraper {
+        margin-top: 32px;
     }
+    // .advantages-list__icons-wrapper {
+    //     margin-bottom: 32px;
+    // }
 
-    .advantages-list__icon {
-        margin-bottom: 32px;
-    }
+    // .advantages-list__icon {
+    //     margin-bottom: 32px;
+    // }
     .advantages-list__title {
+
+        margin-bottom: 16px;
+
         font-weight: 700;
         font-size: 48px;
         line-height: 1.22;
@@ -76,13 +84,17 @@
         display: flex;
         gap:32px;
     }
-    .advantages-list__icons-wrapper {
-        margin-bottom: 40px;
+    .advantages-list__text-wraper {
+        margin-top: 40px;
     }
-    .advantages-list__icon {
-        margin-bottom: 40px;
-    }
+    // .advantages-list__icons-wrapper {
+    //     margin-bottom: 40px;
+    // }
+    // .advantages-list__icon {
+    //     margin-bottom: 40px;
+    // }
     .advantages-list__title {
+        margin-bottom: 16px;
         font-weight: 700;
         font-size: 58px;
         line-height: 1.22;
@@ -110,6 +122,8 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: auto;
 
     width: 50px;
     height: 50px;
@@ -119,7 +133,8 @@
 
 
 // .advantages-list__icons-wrapper::before {
-//     content: "";
+//     content: '';
+//     display: block;
 //     width: 50px;
 //     height: 50px;
 //     background-color: var(--button-color);
@@ -127,4 +142,13 @@
 //     margin-left: auto;
 //     margin-right: auto;
 //     border-radius: 50%;
+    
+// }
+
+
+// .advantages-list__icon::before {
+//     content: '';
+//     display: block;
+//     background-image: url("../images/sprite.svg#icon-cow");
+//     background-position: center; 
 // }
