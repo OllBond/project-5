@@ -24,7 +24,7 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="header-btn-burger">
+    <button type="button" class="header-btn-burger" data-menu-open>
       <svg class="header-btn-burger__icon-burger">
         <use href="./images/sprite1.svg#burger-icon"></use>
       </svg>
@@ -36,7 +36,40 @@
       </svg>
     </button>
   </div>
-
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+      <a class="link header-logo" href="#">
+        <svg class="header-logo__icon">
+          <use href="./images/sprite1.svg#logo-icon"></use>
+        </svg>
+      </a>
+      <button type="button" class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close-icon" width="20" height="20">
+          <use href="./images/sprite.svg#mobile-close-icon"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#home">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#made">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#products">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="mobile-menu__modal-btn">
+        <span>Buy now</span>
+        <svg class="mobile-menu__modal-btn__icon" width="5">
+          <use href="./images/sprite.svg#more-icon"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
   <section class="hero">
     <h1 class="hero-title">
       ice cream made with <span class="hero-title_upper">passion</span>
