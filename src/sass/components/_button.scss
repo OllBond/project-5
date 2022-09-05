@@ -8,16 +8,23 @@ transition: background-color var(--transition-func);
 &:hover, &:focus {
     background-color: var(--button-color-accent);
 }
+    &:focus {
+        color: var(--button-text-white);
+    }
 }
 
 .button-transparent {
     border-radius: 10px;
     border: 2px solid var(--button-color);
     background-color: transparent;
-    color: var(--button-text-white);
+    color: var(--button-text-black);
     transition: border-color var(--transition-func);
 
     &:focus, &:hover {
         border-color: var(--button-color-accent);
+    }
+
+    &:focus {
+        color: var(--button-text-white);
     }
 }

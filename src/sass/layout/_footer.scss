@@ -1,6 +1,4 @@
 
-// .container {
-// }
 .footer-tagline {
     width: 234px;
 }
@@ -24,21 +22,36 @@ letter-spacing: 0.06em;
 }
 
 .footer-contact__list {
-    width: 153px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 19px;
+
+}
+
+.footer-contact__social:not(:last-child) {
+    margin-right: 28px;
+} 
+
+.footer-contact__link-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
     height: 32px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    background-color: #fff;
+    background-color: var(--button-color);
+    border-radius: 50%;
+}
+.social-link__icon {
+fill: var(--background-color);
+transition: fill var(--transition-func);
+
+&:hover, &:focus {
+    fill: var(--title-text-color-secondary);
+}
 }
 
 
-// .footer-contact__social {
-    
-// }
-
-
-// .footer-contact__link-social {
-// }
 .footer-contact__text {
 color: var(--title-text-color);
 font-size: 12px;
@@ -47,7 +60,6 @@ line-height: 1.86;
 margin-left: auto;
 margin-bottom: 40px;
 text-align: end;
-
 }
 
 .footer-contact__tel {
@@ -55,13 +67,17 @@ text-align: end;
 font-size: 12px;
 font-weight: 700;
 line-height: 1.86;
+transition: color var(--transition-func);
+
+&:focus, &:hover {
+    color: var(--button-color);
+}
 }
 .copyright {
     width: 100%;
     padding-top: 16px;
     margin-bottom: 16px;
     border-top: 1px solid #E1E1E1;
-    
 }
 .copyright__text {
     width: 280px;
@@ -89,7 +105,6 @@ line-height: 1.86;
 }
     .footer-tagline {
     width: 352px;
-//     margin-right: 82px;
 }
     
 .footer-tagline_thin {
@@ -102,10 +117,17 @@ margin-bottom: 32px;
 font-size: 48px;
 }
 .footer-contact__list {
-    width: 162px;
-    height: 34px;
     margin-bottom: 40px;
-    background-color: #fff;
+
+}
+
+.footer-contact__social:not(:last-child) {
+    margin-right: 30px;
+} 
+
+.footer-contact__link-social {
+    width: 34px;
+    height: 34px;
 }
 
 .footer-contact__text {
@@ -124,9 +146,6 @@ letter-spacing: 0.02em;
     
     padding-top: 14px;
     margin-bottom: 14px;
-    // border-top: 1px solid #E1E1E1;
-    // color: #7A7A7A;
-    
 }
 .copyright__text {
     width: 298px;
@@ -172,9 +191,6 @@ letter-spacing: 0.02em;
     
     padding-top: 12px;
     margin-bottom: 12px;
-    // border-top: 1px solid #E1E1E1;
-    // color: #7A7A7A;
-    
 }
 .copyright__text {
     width: 298px;
