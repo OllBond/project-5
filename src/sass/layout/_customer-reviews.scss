@@ -1,0 +1,99 @@
+@media screen and (min-width:200px){
+    .customer-box {
+    width: 100%;
+    margin: 0 auto;
+    padding-right:30px;
+    padding-left:30px;
+    padding-bottom: 48px;
+    background-image: url(../images/products/ice-bcg1_mob.jpg);
+       }  
+        .customer-box__img{
+    margin: 0 auto; 
+    border-radius: 50%;
+    margin-bottom: 30px;
+    width:85px;
+    height:85px;
+
+
+   }
+   .customer-box__comment{
+    background: #84A178;
+   border-radius: 10px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+   max-width: 420px;
+   padding: 34px 39px;
+
+font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 255%;
+       text-align: center;
+    color:var(--title-text-color-secondary)
+}
+.customer-box__name{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 186%;
+        text-align: center;
+        color: var(--button-text-black);
+}
+
+}
+
+           @media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
+           screen and (min-resolution: 192dpi) and (max-width:767px),
+           screen and (min-resolution: 2dppx) and (max-width:767px) {
+               .customer-box {
+                   background-image: url(../images/products/ice-bcg1_mob@2x.jpg);
+               }
+           }
+
+@media screen and (min-width:768px) {
+    .customer-box__name {
+        font-size: 16px;
+    }
+    .customer-box__comment {
+        font-size: 14px;
+    }
+                    .customer-box {
+                            background-image: url(../images/products/ice-bcg_tab.jpg);
+                        }
+ .customer-box__comment {
+    max-width: 705px;
+ }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx) and (min-width:768px) {
+                .customer-box {
+                        background-image: url(../images/products/ice-bcg_tab@2x.jpg);
+                    }
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+        .customer-box__comment {
+                font-size: 16px;
+            }
+    .customer-box {
+     background-image: url(../images/products/ice-bcg_desc.jpg);
+                        }
+ .customer-box__comment {
+     max-width: 968px;
+ }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
+screen and (min-resolution: 192dpi) and (min-width:1200px),
+screen and (min-resolution: 2dppx) and (min-width:1200px) {
+    .customer-box {
+        background-image: url(../images/products/ice-bcg_desc@2x.jpg);
+    }
+}
+   
