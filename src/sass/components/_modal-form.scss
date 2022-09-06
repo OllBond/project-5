@@ -24,12 +24,6 @@
     }
 
 
-
-    .modal-form-field {
-        margin-bottom: 10px;
-
-    }
-
     .modal-form-comment {
         margin-bottom: 24px;
     }
@@ -69,12 +63,6 @@
         line-height: 17px;
         padding: 7px 43px;
 
-        &:hover,
-        &:focus {
-            background-color: var(--hover-background-color);
-
-        }
-
     }
 
 }
@@ -84,7 +72,9 @@
     .modal-form {
         display: flex;
         flex-direction: column;
-        margin-top: 32px;
+        margin: 32px auto 0;
+        max-width: 368px;
+
     }
 
         .modal-form-input {
@@ -104,12 +94,6 @@
         }
     }
 
-
-
-    .modal-form-field {
-        margin-bottom: 10px;
-
-    }
 
     .modal-form-comment {
         margin-bottom: 32px;
@@ -150,13 +134,6 @@
         font-size: 14px;
         line-height: 17px;
         padding: 12px 43px;
-
-
-        &:hover,
-        &:focus {
-            background-color: var(--hover-background-color);
-
-        }
 
     }
 
