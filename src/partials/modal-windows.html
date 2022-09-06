@@ -97,3 +97,93 @@
     </div>
 </div>
 
+<!-- products-modal -->
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-products">
+        <button class="modal-close-btn" type="button" data-modal-close>
+            <svg class="button-close" width="18" height="18">
+                <use class="icon-form" href="./images/sprite.svg#icon-close-modal"></use>
+
+            </svg>
+        </button>
+        <form class="form">
+            <p class="modal-form-text">Chololate icecream</p>
+            <div class="prod-label">
+                
+                <img class="pro-modal__img" srcset="./images/products/prod-modal.jpg 1x, ./images/products/prod-modal@2x.jpg 2x"
+                    src="./images/products/prod-modal.jpg" alt="ice-cream">
+                <div class="modal-ellipse"></div>
+            </div>
+            
+
+            <ul class="prod-about">
+                <li>
+                    <ul>
+                        <div class="prod-group">
+                            <li class="prod-btn">320</li>
+                            <li class="prod-oter">kcal</li>
+                        </div>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <div class="prod-group">
+                            <li class="prod-btn">4g</li>
+                            <li class="prod-oter">Protein...</li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <div class="prod-group">
+                            <li class="prod-btn">8,2g</li>
+                            <li class="prod-oter">Fats</li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <div class="prod-group">
+                            <li class="prod-btn">40,4g</li>
+                            <li class="prod-oter">Carbs</li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+            <p class="prod-ingredients">Ingredients</p>
+            <ul class="prod-ingredients_parts">
+                <li class="prod-ingredients_item"><span>Milk</span><span>100ml</span></li>
+                <li class="prod-ingredients_item"><span>Belgian chocolate</span><span>20g</span></li>
+                <li class="prod-ingredients_item"><span>Cream</span><span>150ml</span></li>
+                <li class="prod-ingredients_item"><span>Cocoa powder</span><span>30g</span></li>
+                <li class="prod-ingredients_item"><span>Sugar</span><span>40g</span></li>
+                <li class="prod-ingredients_item"><span>Vanilla sugar</span><span>10g</span></li>
+            </ul>
+
+
+            <form class="modal-form">
+                <label class="modal-form-field">
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" name="user_name" class="modal-form-input" required="" pattern="[a-zA-Zа-яА-Я]+"
+                            minlength="2" placeholder="Name">
+            
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" name="user_phone" class="modal-form-input" required=""
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" placeholder="Phone">
+                    </span>
+                </label>
+                
+                <label class="modal-form-field modal-form-comment">
+                    <textarea name="user_message" class="modal-form-message" placeholder="Comment"></textarea>
+                </label>
+                <button type="submit" class="modal-form-submit button-color">Submit</button>
+            </form>
+        </form>
+    </div>
+
+</div>
