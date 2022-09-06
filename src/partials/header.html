@@ -2,7 +2,7 @@
   <div class="header" id="home">
     <a class="link header-logo" href="#">
       <svg class="header-logo__icon">
-        <use href="./images/sprite1.svg#logo-icon"></use>
+        <use href="./images/sprite.svg#logo-icon"></use>
       </svg>
     </a>
     <nav class="header-nav">
@@ -26,14 +26,16 @@
     </nav>
     <button type="button" class="header-btn-burger" data-menu-open>
       <svg class="header-btn-burger__icon-burger">
-        <use href="./images/sprite1.svg#burger-icon"></use>
+        <use href="./images/sprite.svg#burger-icon"></use>
       </svg>
     </button>
-    <button type="button" class="button header-btn-modal">
+    
+    <button type="button" class="button header-btn-modal" data-modal-buynow-open>
       Buy now
       <svg class="header-btn-modal__icon">
         <use href="./images/sprite.svg#more-icon"></use>
       </svg>
+
     </button>
   </div>
   <div class="mobile-menu" data-menu>
@@ -91,7 +93,7 @@
       </p>
       <a class="link hero-desc__link" href="#">
         <svg class="hero-desc__icon">
-          <use href="./images/sprite1.svg#arrow-icon"></use>
+          <use href="./images/sprite.svg#arrow-icon"></use>
         </svg>
       </a>
     </div>
@@ -115,23 +117,23 @@
       <picture>
         <source
           srcset="
-            ./images/hero/many-ice-cream/desktop/many-ice-cream-desktop.jpg    1x,
-            ./images/hero/many-ice-cream/desktop/many-ice-cream-desktop@2x.jpg 2x
+            ./images/hero/many-ice-cream/desktop/ice.png    1x,
+            ./images/hero/many-ice-cream/desktop/ice@2x.png 2x
           "
           media="(min-width: 1200px)"
         />
 
         <source
           srcset="
-            ./images/hero/many-ice-cream/tablet/many-ice-cream-tablet.jpg    1x,
-            ./images/hero/many-ice-cream/tablet/many-ice-cream-tablet@2x.jpg 2x
+            ./images/hero/many-ice-cream/tablet/ice.png    1x,
+            ./images/hero/many-ice-cream/tablet/ice@2x.png 2x
           "
           media="(min-width: 768px)"
         />
 
         <img
           class=""
-          src="./images/hero/many-ice-cream/tablet/many-ice-cream-tablet.jpg"
+          src="./images/hero/many-ice-cream/tablet/ice.png"
           alt="Фотография мороженого"
         />
       </picture>
