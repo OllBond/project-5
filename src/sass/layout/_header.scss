@@ -32,6 +32,10 @@
   margin-bottom: 61px;
 }
 
+.header-logo {
+  outline: none;
+}
+
 .header-logo__icon {
   width: 40px;
   height: 37px;
@@ -86,6 +90,7 @@
   outline: none;
   border: 2px solid var(--button-color);
   border-radius: 10px;
+  color: var(--button-text-black);
 
   @include font(8px, 600, 1.25);
 
@@ -94,6 +99,10 @@
   &:focus,
   &:hover {
     border-color: var(--button-color-accent);
+  }
+
+  &:focus {
+    color: var(--button-text-white);
   }
 }
 
@@ -108,6 +117,10 @@
   &:focus,
   &:hover {
     color: var(--button-color-accent);
+  }
+
+  &:focus {
+    color: var(--button-text-white);
   }
 }
 
@@ -131,12 +144,35 @@
   background-repeat: no-repeat;
 }
 
-.hero-big-ice-cream {
-  width: 400px;
+.hero-big-ice-cr {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-34%, -25%);
+  left: 27%;
+  bottom: 0;
+  filter: drop-shadow(0px 0px 54px #fcfcfc);
+}
+
+.hero-big-ice-cr_gr {
+  width: 102px;
+  height: 79px;
+  position: absolute;
+  top: 1%;
+  left: 37%;
+}
+
+.hero-big-ice-cr_r {
+  width: 105px;
+  height: 81px;
+  position: absolute;
+  top: 36%;
+  left: 40%;
+}
+
+.hero-big-ice-cr_y {
+  width: 82px;
+  height: 71px;
+  position: absolute;
+  top: 19%;
+  left: 7%;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -182,7 +218,7 @@
   .header-btn-modal__icon {
     width: 12px;
     height: 12px;
-    fill: inherit;
+    fill: currentColor;
   }
 
   .header {
@@ -199,12 +235,35 @@
     background-repeat: no-repeat;
   }
 
-  .hero-big-ice-cream {
-    width: 400px;
+  .hero-big-ice-cr {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-10%, -52%);
+    left: 55%;
+    bottom: 0;
+    filter: drop-shadow(0px 0px 56px #fcfcfc);
+  }
+
+  .hero-big-ice-cr_gr {
+    width: 160px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 38%;
+  }
+
+  .hero-big-ice-cr_r {
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: 38%;
+    left: 44%;
+  }
+
+  .hero-big-ice-cr_y {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
   }
 
   .hero-progress {
@@ -379,12 +438,32 @@
     background-repeat: no-repeat;
   }
 
-  .hero-big-ice-cream {
-    width: 600px;
+  .hero-big-ice-cr {
+    filter: drop-shadow(0px 0px 100px #fcfcfc);
+  }
+
+  .hero-big-ice-cr_gr {
+    width: 280px;
+    height: 230px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-5%, -49%);
+    top: -2%;
+    left: 40%;
+  }
+
+  .hero-big-ice-cr_r {
+    width: 250px;
+    height: 230px;
+    position: absolute;
+    top: 37%;
+    left: 46%;
+  }
+
+  .hero-big-ice-cr_y {
+    width: 230px;
+    height: 190px;
+    position: absolute;
+    top: 20%;
+    left: 11%;
   }
 
   .hero-many-ice-cream {
