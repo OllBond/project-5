@@ -10,6 +10,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("active-modal");
   }
 })();
 
@@ -27,6 +28,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+      document.body.classList.toggle("active-modal");
   }
 })();
 
@@ -44,5 +46,31 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("active-modal");
+  }
+})();
+
+
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-buynow-open]"),
+    openModalMobileBtn: document.querySelector("[data-modal-buynow-mobile-open]"),
+    closeModalBtn: document.querySelector("[data-modal-buynow-close]"),
+    modal: document.querySelector("[data-modal-buynow]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openModalMobileBtn.addEventListener("click", openModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("active-modal");
+  }
+
+  function openModal() {
+    refs.modal.classList.remove("is-hidden");
+    document.body.classList.add("active-modal");
   }
 })();
