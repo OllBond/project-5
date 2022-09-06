@@ -19,7 +19,7 @@
 }
 .galary{
     padding: 0 30;
-        background-image: url(../images/products/ice-bcg1_mob.jpg);
+        background-image: url(../images/galary&customers/icebgim1.jpg);
 }
 .galary-icecream{
     padding: 0 auto;
@@ -29,11 +29,14 @@
 screen and (min-resolution: 192dpi) and (max-width:767px),
 screen and (min-resolution: 2dppx) and (max-width:767px) {
     .galary {
-        background-image: url(../images/products/ice-bcg1_mob@2x.jpg);
+        background-image: url(../images/galary&customers/icebgim2@2x.jpg);
     }
 }
 
 @media screen and (min-width:768px) {
+        .galary {
+                background-image: url(../images/galary&customers/icebgit1.jpg);
+            }
     .galary-icecream__img {
         max-width: 704px;
     }
@@ -44,13 +47,13 @@ screen and (min-resolution: 2dppx) and (max-width:767px) {
 screen and (min-resolution: 192dpi) and (min-width:768px),
 screen and (min-resolution: 2dppx) and (min-width:768px) {
     .galary {
-        background-image: url(../images/products/ice-bcg_tab@2x.jpg);
+        background-image: url(../images/galary&customers/icebgit2@2x.jpg);
     }
 }
 
 @media screen and (min-width:1200px) {
     .galary {
-        background-image: url(../images/products/ice-bcg_desc.jpg);
+        background-image: url(../images/galary&customers/icebgid1.jpg);
     }
 }
 
@@ -58,7 +61,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 screen and (min-resolution: 192dpi) and (min-width:1200px),
 screen and (min-resolution: 2dppx) and (min-width:1200px) {
     .galary {
-        background-image: url(../images/products/ice-bcg_desc@2x.jpg);
+        background-image: url(../images/galary&customers/icebgid2@2x.jpg);
     }
 }
 

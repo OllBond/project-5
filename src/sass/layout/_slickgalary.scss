@@ -33,6 +33,7 @@
     background: url(/src/images/galary&customers/forward.svg) no-repeat;
     background-size: cover;
     background-position: center;
+    animation:rotate-button-galary 5s infinite linear reverse;
 }
 
 .galary-icecream__list .slick-next.slick-arrow {
@@ -40,6 +41,8 @@
     background: url(/src/images/galary&customers/reply.svg) no-repeat;
     background-size: cover;
     background-position: center;
+     animation: rotate-button-galary 5s infinite linear ;
+     color: rgba(179, 184, 114,0.3);
 }
 
 
@@ -57,10 +60,10 @@
             padding: 0;
             border-radius: 60%;
             border-color: aqua;
-            background-color: violet;
+            background-color: rgb(95, 129, 95);
         }
                 & .slick-active button {
-                    background-color: black;
+                    background-color: silver;
                     transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
                 }
 }
@@ -97,6 +100,20 @@ right: 20%;
 
 
 .galary-icecream__list .slick-dots .slick-active button{
-    background-color: black;
+    background-color: silver;
     transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes rotate-button-galary{
+    0%{
+        transform:rotate(0deg);
+
+    }
+    50%{
+
+    }
+    100%{
+        transform:rotate(360deg);
+
+    }
 }
