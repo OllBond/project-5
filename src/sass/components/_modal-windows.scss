@@ -1,4 +1,9 @@
 
+.modal-button-wrapper {
+    text-align: center;
+
+}
+
 .active-modal {
     overflow-y: hidden;
 }
@@ -73,9 +78,17 @@
      }
 
 .modal-open-map {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
     padding: 7px 37px;
     margin: 0 auto;
-    display: block;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+
 }
 
     .modal-close-btn {
@@ -233,9 +246,17 @@
         }
     
         .modal-open-map {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.25;
             padding: 7px 37px;
             margin: 0 auto;
-            display: block;
+            display: inline-block;
+            width: auto;
+            text-align: center;
+
         }
 
 

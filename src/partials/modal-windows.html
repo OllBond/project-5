@@ -17,9 +17,11 @@
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <button type="button" class="modal-open-map button-color">
-            <a class="link" target="_blank" href="https://goo.gl/maps/DC4DyfJQhU2LMTEr9">Open map</a>
-        </button>
+            <div class="modal-button-wrapper">
+            <a class="modal-open-map button-color link" 
+            target="_blank" 
+            href="https://goo.gl/maps/DC4DyfJQhU2LMTEr9">Open map</a>
+        </div>
     </div>
 </div>
 
@@ -40,7 +42,7 @@
         </p>
         <div class="modal-video">
             <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
         <p class="modal-video-descr">
@@ -96,6 +98,69 @@
         </form>
     </div>
 </div>
+
+<!-- --Modal window Buy now-- -->
+<div class="backdrop is-hidden" data-modal-buynow="">
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-buynow-close="">
+            <svg class="modal-close-btn-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-close-modal"></use>
+            </svg>
+        </button>
+        <p class="modal-form-text">
+            Buy now
+        </p>
+        <div class="buy-now-items">
+            <div class="buy-now-items__item icecream">
+                <div class="buy-now-img-wrapper">
+                    <picture>
+                        <source srcset="./images/icecream_modal.jpg 1x, ./images/icecream_modal@2x.jpg 2x">
+                        <img src="./images/icecream_modal.jpg" alt="icecream">
+                    </picture>
+                </div>
+                <p class="buy-now-text">ice cream</p>
+            </div>
+            <div class="buy-now-items__item icecoffee">
+                <div class="buy-now-img-wrapper">
+                    <picture>
+                        <source srcset="./images/icecoffee_modal.jpg 1x, ./images/icecoffee_modal@2x.jpg 2x">
+                        <img src="./images/icecoffee_modal.jpg" alt="icecoffee">
+                    </picture>
+                </div>
+                <p class="buy-now-text">ice coffee</p>
+            </div>
+            <div class="buy-now-items__item milkshake">
+                <div class="buy-now-img-wrapper">
+                    <picture>
+                        <source srcset="./images/milkshake_modal.jpg 1x, ./images/milkshake_modal@2x.jpg 2x">
+                        <img src="./images/milkshake_modal.jpg" alt="milkshake">
+                    </picture>
+                </div>
+                <p class="buy-now-text">milkshake</p>
+            </div>
+        </div>
+        <form class="modal-form">
+            <label class="modal-form-field">
+                <span class="modal-form-input-wrapper">
+                    <input type="text" name="user_name" class="modal-form-input" required="" pattern="[a-zA-Zа-яА-Я]+"
+                        minlength="2" placeholder="Name">
+                </span>
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-form-input-wrapper">
+                    <input type="tel" name="user_phone" class="modal-form-input" required=""
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" placeholder="Phone">
+                </span>
+            </label>
+            <label class="modal-form-field modal-form-comment">
+                <textarea name="user_message" class="modal-form-message" placeholder="Comment"></textarea>
+            </label>
+            <button type="submit" class="modal-form-submit button-color">Submit</button>
+        </form>
+    </div>
+</div>
+
+
 <div class="backdrop is-hidden" data-modal>
     <div class="modal-products">
         <button class="modal-close-btn" type="button" data-modal-close>
