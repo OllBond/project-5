@@ -4,6 +4,9 @@ border: none;
 background-color: var(--button-color);
 color: var(--button-text-black);
 transition: background-color var(--transition-func);
+font-size: 14px;
+font-weight: 600;
+line-height: 1.29;
 
 &:hover, &:focus {
     background-color: var(--button-color-accent);
@@ -20,6 +23,9 @@ transition: background-color var(--transition-func);
     color: var(--button-text-black);
     transition: border-color var(--transition-func);
 
+    font-size: 14px;
+font-weight: 600;
+line-height: 1.29;
     &:focus, &:hover {
         border-color: var(--button-color-accent);
     }
