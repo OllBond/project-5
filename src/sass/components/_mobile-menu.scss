@@ -66,6 +66,9 @@
     background-color: var(--button-color);
     color: var(--button-text-black);
     transition: background-color var(--transition-func);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
 
     &:hover,
     &:focus {
