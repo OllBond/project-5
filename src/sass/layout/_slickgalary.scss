@@ -34,6 +34,7 @@
     background-size: cover;
     background-position: center;
     animation:rotate-button-galary 5s infinite linear reverse;
+    display: none;
 }
 
 .galary-icecream__list .slick-next.slick-arrow {
@@ -41,8 +42,9 @@
     background: url(/src/images/galary&customers/reply.svg) no-repeat;
     background-size: cover;
     background-position: center;
-     animation: rotate-button-galary 5s infinite linear ;
-     color: rgba(179, 184, 114,0.3);
+    animation: rotate-button-galary 5s infinite linear ;
+    color: rgba(179, 184, 114,0.3);
+    display: none;
 }
 
 
@@ -61,6 +63,7 @@
             border-radius: 60%;
             border-color: aqua;
             background-color: rgb(95, 129, 95);
+            border: none;
         }
                 & .slick-active button {
                     background-color: silver;
