@@ -5,9 +5,9 @@ body {
   font-size: 16px;
   letter-spacing: 0.04em;
 
-&.no-scroll {
+  &.no-scroll {
     overflow: hidden;
-}
+  }
 }
 
 // .text {
@@ -34,7 +34,7 @@ img {
 }
 
 button {
-  cursor: pointer;
+  cursor: url('../images/cursor.png'), pointer;
 }
 
 .list {
@@ -46,6 +46,7 @@ button {
 .link {
   text-decoration: none;
   color: inherit;
+  cursor: url('../images/cursor.png'), pointer;
 }
 
 ul,
