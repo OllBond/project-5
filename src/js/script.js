@@ -7,16 +7,11 @@ $(".carousel").slick({
     autoplay: true,
     adaptiveHeight: true,
     autoplaySpeed: 2500,
+    arrows: false
 });
 
 import "slick-slider";
-$('.single-item').slick({
-     dots: true,
-    speed: 1000,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-});
+
 
 $('.one-time').slick({
   dots: true,
