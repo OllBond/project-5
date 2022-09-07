@@ -102,21 +102,21 @@ right: 20%;
  }
 
 
-.galary-icecream__list .slick-dots .slick-active button{
-    background-color: silver;
-    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+// .galary-icecream__list .slick-dots .slick-active button{
+//     background-color: silver;
+//     transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
-@keyframes rotate-button-galary{
-    0%{
-        transform:rotate(0deg);
+// @keyframes rotate-button-galary{
+//     0%{
+//         transform:rotate(0deg);
 
-    }
-    50%{
+//     }
+//     50%{
 
-    }
-    100%{
-        transform:rotate(360deg);
+//     }
+//     100%{
+//         transform:rotate(360deg);
 
-    }
-}
+//     }
+// }
